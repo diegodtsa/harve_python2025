@@ -8,10 +8,15 @@ df = pd.DataFrame({
 
 df["Média"] = (df["Prova_1"] + df["Prova_2"]) / 2
 
-aluno_aprovado = df.loc[df["Média"] >= 7, ["Aluno","Média"]]
+df["Aumento de Desempenho"] = (df["Prova_2"] - df["Prova_1"] )
+
+aumento_desempenho = df.loc[df["Aumento de Desempenho"]> 1]
+
+#df["Aumento de Desempenho"] = df.loc[df["Prova_2"] >= df["Prova_1"]]
+
+#aluno_aprovado = df.loc[df["Média"] >= 7, ["Aluno","Média"]]
+
+print(aumento_desempenho)
 
 
-
-#print(df)
-
-print(aluno_aprovado)
+#print(aluno_aprovado)
