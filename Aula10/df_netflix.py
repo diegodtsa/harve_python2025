@@ -14,6 +14,6 @@ filmes_spielberg = filmes_antigos[filmes_antigos["director"] == "Steven Spielber
 
 
 
-display(filmes_spielberg)
-#print(filmes_antigos.head())
+
+print(filmes_antigos.head())
 #print(filmes.head())
