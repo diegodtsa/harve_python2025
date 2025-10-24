@@ -15,4 +15,5 @@ print(df_netflix[["Title", "Categoria"]].head(10))
 
 #print(df_netflix.info())
 
-#print(df_netflix.head(100))
+print(df_netflix["Categoria"].value_counts())
+
