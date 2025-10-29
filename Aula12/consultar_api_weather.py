@@ -10,7 +10,7 @@ url_completa_fin = f'{url_fin}{rota_fin}key={chave_fin}'
 
 response = r.get(url=url_completa_fin)
 
-#print(f'{url_fin}{rota_fin}key={chave_fin}')
+print(f'{url_fin}{rota_fin}key={chave_fin}')
 
 print(response)
 
