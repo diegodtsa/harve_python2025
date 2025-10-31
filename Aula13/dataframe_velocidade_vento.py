@@ -17,7 +17,7 @@ dia = df_wheather[df_wheather['VELOCIDADE_VENTO'] == velocidade_maxima]
 
 
 
-print(df_wheather)
+#print(df_wheather)
 
-print(velocidade_maxima)
+#print(velocidade_maxima)
 print(dia)
