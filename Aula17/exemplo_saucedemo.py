@@ -10,20 +10,20 @@ import time
 # Configurar o WebDriver automaticamente
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
+driver.maximize_window()
 
 # Abrir o Google
-driver.get("https://www.harve.com.br")
+driver.get("https://www.saucedemo.com/")
 
 # Tempo para carregar a página
 time.sleep(2)
 
-elemento = driver.find_element(By.XPATH, '//*[@id="fundo"]/div[1]/div[2]/div/div/div[6]/div/div/a/span')
+login = driver.find_element(By.ID, 'user-name')
+senha =  driver.find_element(By.ID, 'password')
+botao = driver.find_element(By.ID, 'login-button')
 
-elemento.click()
+login.send_keys('standard_user')
+senha.send_keys('secret_sauce')
+botao.click()
+
 time.sleep(5)
-
-# Fechar o navegador
-driver.quit()
-
-print("Chrome fechado com sucesso!")
-
